@@ -14,7 +14,7 @@ def Salt(salthost,saltfunc,saltargs) {
                                         target: salthost, 
                                         targettype: 'list'),
                 credentialsId: "f89abde3-49f0-4b75-917e-c4e49c483f4f", 
-                servername: "http://0.0.0.0:9000")
+                servername: "http://127.0.0.1:9000")
    
     println(result)
     PrintMes(result,'blue')
