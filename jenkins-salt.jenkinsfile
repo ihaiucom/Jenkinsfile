@@ -24,7 +24,7 @@ def Salt(salthost,saltfunc,saltargs) {
 
 node("master"){
     stage("Deploy"){
-        Salt(${targetHosts},"cmd.run","ls")
+        Salt("${targetHosts}","cmd.run","ls")
     }
 
 }
