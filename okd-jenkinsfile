@@ -37,8 +37,8 @@ podTemplate(
             privileged: false,
             alwaysPullImage: false,
             args: '${computer.jnlpmac} ${computer.name}',
-            resourceRequestCpu: '2000m',
-            resourceLimitCpu: '2000m',
+            resourceRequestCpu: '1000m',
+            resourceLimitCpu: '1000m',
             resourceRequestMemory: '2Gi',
             resourceLimitMemory: '2Gi',
             envVars: [
