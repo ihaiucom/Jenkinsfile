@@ -46,7 +46,7 @@ podTemplate(
                 envVar(key: 'CLASS_PATH', value: '/docker-java-home/jre/lib/rt.jar:/docker-java-home/jre/lib/dt.jar:/docker-java-home/jre/lib/tools.jar')]
         )
     ],
-    volumes: [persistentVolumeClaim(mountPath: '/etc/data/', claimName: 'jenkins')],
+    volumes: [persistentVolumeClaim(mountPath: '/etc/data/', claimName: 'pv-jenkins')],
     //idleMinutes: '60',
     //activeDeadlineSeconds: '60',
     slaveConnectTimeout: '60'
