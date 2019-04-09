@@ -39,8 +39,8 @@ podTemplate(
             args: '${computer.jnlpmac} ${computer.name}',
             //resourceRequestCpu: '1000m',
            // resourceLimitCpu: '1000m',
-            resourceRequestMemory: '2Gi',
-            resourceLimitMemory: '2Gi',
+           // resourceRequestMemory: '2Gi',
+           // resourceLimitMemory: '2Gi',
             envVars: [
                 envVar(key: 'PATH', value: '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/apache-maven-3.5.0/bin'),
                 envVar(key: 'CLASS_PATH', value: '/docker-java-home/jre/lib/rt.jar:/docker-java-home/jre/lib/dt.jar:/docker-java-home/jre/lib/tools.jar')]
